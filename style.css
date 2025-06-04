@@ -366,8 +366,11 @@ main {
   }
   .stand-datenschutz {
     padding: 10px;
-    margin: 0px;
+    margin-bottom: 0px;
+    
+  
   }
+
 
 @media (max-width: 768px) {
 
