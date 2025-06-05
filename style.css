@@ -199,6 +199,7 @@ main {
   width: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  
 }
 
 .team-member:hover img {
@@ -416,11 +417,11 @@ main {
 
   /* === TEXT UND TITEL === */
   h2 {
-    font-size: 2rem;
+    font-size: 8vw;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 4.5vw;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -472,6 +473,7 @@ main {
     color: #333;          /* dunkle Textfarbe */
     text-align: center;
     white-space: nowrap;  /* verhindert Umbruch */
+     text-decoration: underline;
   }
     .team-member .overlay {
     opacity: 1 !important;
@@ -482,7 +484,7 @@ main {
   }
   .overlay a {
     color:#333333
-  }
+   }
    
 
   /* Hover/Active-Transform überschreiben */
