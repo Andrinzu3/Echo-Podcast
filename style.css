@@ -539,7 +539,19 @@ main {
   .social-media a img {
     height: 20px;
   }
-  
+    .play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-button::before {
+    font-size: 2rem;
+    margin-left: 6px;
+    margin-top: 2px;
+  }
 }
+
+  
+
 
 
