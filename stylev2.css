@@ -172,7 +172,7 @@ main {
   font-size: 2.5rem;
   color: white;
   margin-left: 8px;
-  margin-top: 3px;
+  
 }
 
 .play-button:hover {
@@ -539,16 +539,7 @@ main {
   .social-media a img {
     height: 20px;
   }
-    .play-button {
-    width: 60px;
-    height: 60px;
-  }
-
-  .play-button::before {
-    font-size: 2rem;
-    margin-left: 6px;
-    margin-top: 2px;
-  }
+  
 }
 
   
