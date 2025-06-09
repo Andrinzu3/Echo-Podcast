@@ -1,14 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 🎬 Video-Logik
-    const container = document.getElementById('videoContainer');
-    container.addEventListener('click', () => {
-      container.innerHTML = `
-        <iframe src="https://www.youtube.com/embed/Gx543KbuGFY?autoplay=1"
-                title="Pilotfolge"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-      `;
-    });
+
   
     // 🌄 Slideshow-Logik
     const hero = document.querySelector('.hero');

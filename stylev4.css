@@ -141,7 +141,7 @@ main {
   
 }
 
-.video-container img,
+
 .video-container iframe {
   width: 100%;
   height: 100%;
@@ -149,34 +149,6 @@ main {
   display: block;
   border: none;
   
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  transition: background 0.3s;
-}
-
-.play-button::before {
-  content: '▶';
-  font-size: 2.5rem;
-  color: white;
-  margin-left: 8px;
-  
-}
-
-.play-button:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 
 /* === TEAM === */
