@@ -32,7 +32,7 @@ h3 {
 p {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
   max-width: 900px;
   margin-inline: auto;
@@ -131,6 +131,20 @@ main {
 /* === VIDEO === */
 .video-container {
   max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 152px;   /* Episode */
+  display: block;
+  border: 0;
+}
+.video-container-folgen {
+  max-width: 800px;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
   border-radius: 12px;
@@ -142,7 +156,7 @@ main {
 }
 
 
-.video-container iframe {
+.video-container-folgen iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -150,7 +164,9 @@ main {
   border: none;
   
 }
-
+#ueberuns {
+  margin-top: 60px;
+}
 /* === TEAM === */
 .team-photos {
   display: flex;
@@ -403,10 +419,29 @@ main {
   }
 
   /* === VIDEO === */
-  .video-container {
-    width: 90%;
-    max-width: 100%;
+ @media (max-width: 600px) {
+  .video-container-folgen {
+    height: 360px !important;
+    aspect-ratio: auto;
+    box-shadow: none;
+    cursor: default;
   }
+
+     .video-container {
+    all: unset;                 /* ← ALLES zurücksetzen */
+    display: block;
+    width: 100%;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 360px;              /* Spotify-Hochformat */
+    border-radius: 12px;
+    display: block;
+  }
+  
 
   /* === TEAM === */
  
