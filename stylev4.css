@@ -135,6 +135,7 @@ main {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: calc(100% - 20px); 
 }
 
 .video-container iframe {
@@ -142,6 +143,7 @@ main {
   height: 152px;   /* Episode */
   display: block;
   border: 0;
+
 }
 .video-container-folgen {
   max-width: 800px;
@@ -152,7 +154,7 @@ main {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   cursor: pointer;
-  
+  width: calc(100% - 20px); 
 }
 
 
@@ -362,34 +364,22 @@ main {
 
 @media (max-width: 768px) {
 
-  /* === HEADER === */
-  .site-header {
-    padding: 20px 0;
-  }
 
-  .logo {
-    display: none;
-  }
 
-  .header-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .nav-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20vw; /* weiter auseinander */
+  .video-container {
+    margin-left: 12px;
+    margin-right: 12px;
   }
   
 
-  .nav-list li a {
-    font-size: 5vw;
+   .video-container-folgen {
+    margin-left: 5px;
+    width: calc(100% - 10px); 
+
     
   }
+
+
 
   /* === HERO === */
   .hero {
@@ -418,13 +408,45 @@ main {
     padding: 0 15px;
   }
 
+  }
+
   /* === VIDEO === */
- @media (max-width: 600px) {
+ @media (max-width: 670px) {
+    /* === HEADER === */
+  .site-header {
+    padding: 10px 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20vw; /* weiter auseinander */
+  }
+
+    .nav-list li a {
+    font-size: 5vw;
+    
+  }
+
   .video-container-folgen {
     height: 360px !important;
     aspect-ratio: auto;
     box-shadow: none;
     cursor: default;
+    
+    
   }
 
      .video-container {
@@ -437,10 +459,11 @@ main {
 
   .video-container iframe {
     width: 100%;
-    height: 360px;              /* Spotify-Hochformat */
+    height: 300px;              /* Spotify-Hochformat */
     border-radius: 12px;
     display: block;
   }
+
   
 
   /* === TEAM === */
@@ -548,8 +571,13 @@ main {
   }
   
 }
+@media (max-width: 530px) {
+  .video-container iframe {
+    width: 100%;
+    height: 360px;              /* Spotify-Hochformat */
+    border-radius: 12px;
+    display: block;
+  }
 
-  
-
-
+}
 
