@@ -17,6 +17,7 @@ h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(3rem, 5vw, 5.5rem);
   letter-spacing: 1px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: #333333;
 
@@ -179,7 +180,7 @@ main {
 
 .team-member {
   position: relative;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -363,6 +364,7 @@ main {
 
 
 @media (max-width: 768px) {
+  
 
 
 
@@ -395,6 +397,7 @@ main {
   /* === TEXT UND TITEL === */
   h2 {
     font-size: 8vw;
+    margin-top: 10px;
   }
 
   h3 {
