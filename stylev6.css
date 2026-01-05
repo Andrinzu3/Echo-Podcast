@@ -361,6 +361,10 @@ main {
     
   
   }
+  .footer-logo h2
+  {
+    margin-top: 0px;
+  }
 
 
 @media (max-width: 768px) {
@@ -410,7 +414,10 @@ main {
     font-size: 1rem;
     padding: 0 15px;
   }
-
+ .footer-logo h2
+  {
+    margin-top: 0px;
+  }
   }
 
   /* === VIDEO === */
